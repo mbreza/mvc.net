@@ -1,0 +1,19 @@
+﻿@model CarRent.Models.Customer
+
+<td>
+    @Html.DisplayFor(model => model.FirstName)
+</td>
+<td>
+    @Html.DisplayFor(model => model.LastName)
+</td>
+<td>
+    @Html.DisplayFor(model => model.Pesel)
+</td>
+<td>
+    @Html.DisplayFor(model => model.Address)
+</td>
+<td>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Details", "Details", new { id = Model.ID }) |
+    @Html.ActionLink("Delete", "Delete", new { id = Model.ID })
+</td>
